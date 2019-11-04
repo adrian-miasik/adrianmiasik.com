@@ -1,99 +1,187 @@
---
-[Post #2]
-Title: Seeing How Browsers React. and Not That Type of React.
-Author: Adrian Miasik
-Date: 2019-11-03
+<!DOCTYPE html>
+<!--Copyright 2019 Adrian Miasik-->
 
-I noticed something in the previous post. I've tested this file on numerous web browsers and each one reacts slightly differently. Let me show you.
+<!--Licensed under the Apache License, Version 2.0 (the "License");-->
+<!--you may not use this file except in compliance with the License.-->
+<!--You may obtain a copy of the License at-->
 
-First up is Firefox.
-This file (`index.html`) works on Firefox. But I noticed that the console did spit out an error:
-"The character encoding of the HTML document was not declared.
-The document will render with garbled text in some browser configurations if the document contains characters from outside the US-ASCII range.
-The character encoding of the page must be declared in the document or in the transfer protocol."
+<!--http://www.apache.org/licenses/LICENSE-2.0-->
 
-Alright that should be pretty easy to address.
-I've used Codecademy to learn web dev before, so I do remember that each website needs to adhere to a certain HTML structure.
-The first HTML element in any document should be...(Looking it up now)...<!DOCTYPE html>!
-Hmm, interesting. You didn't see it but adding `!DOCTYPE html` (Replace the ` with <> respectively) doesn't appear in my versions of Firefox, Chrome, Internet Explorer 11, and also Microsoft Edge.
-So even just typing out the correct DOCTYPE element in an html file is not enough, it does seems to get deleted by the 4 aforementioned browsers. Good to know. Anyways, I digress.
-
-Second up is Google Chrome.
+<!--Unless required by applicable law or agreed to in writing, software-->
+<!--distributed under the License is distributed on an "AS IS" BASIS,-->
+<!--WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.-->
+<!--See the License for the specific language governing permissions and-->
+<!--limitations under the License.-->
+<html lang="">
+<head>
+  <title>Adrian Miasik</title>
+</head>
+<body>
+<header>
+  <h2>AdrianMiasik.com</h2>
+  <hr>
+  <h2>Site Archive:</h2>
+  <ul>
+    <li><a href="https://www.adrianmiasik.com/">[LIVE]</a></li>
+    <li><a href="https://deploy-preview-2--adrianmiasik.netlify.com/">&#129460 The Bones Update &#129460</a></li>
+    <li><a href="https://deploy-preview-1--adrianmiasik.netlify.com/">Seeing How Browsers React. and Not That
+      Type of React.</a></li>
+    <li>The Journey Through the Wild West of Web Development Begins. [check back in a bit!]</li>
+  </ul>
+</header>
+<br>
+<hr>
+<h2><a href="https://deploy-preview-2--adrianmiasik.netlify.com/">&#129460 The Bones Update &#129460</a></h2>
+<h3>Author: Adrian Miasik</h3>
+<h3>Publication Date: 2019-11-04 (2:16 a.m. EST)</h3>
+<p>
+  Bam! This update brings us HTML. Everything you see on this page is structured in these two legendary elements:
+  <code>&lt;html&gt;</code><code>&lt;/html&gt;</code>
+  Using HTML gives us access to so many great tools. <strong>We can make font bold. </strong><i>We can italicize
+  this shit too.</i><strike>WE CAN CENSOR THINGS...kind of</strike> I can make things
+  <a href="">clickable.</a> See that list at the top? That shit's also done in HTML too.
+  &#128079 W E C A N E V E N U S E E M O J I S &#128079 &#128064 &#128166
+  <br>
+  <br>
+  Not sure how I'm going to  be
+  hosting different versions of the site just yet. But keep an eye out on the "Site Archive" section.
+  <br>
+  Anyways, till next time! Doot &#127930 Doot &#127930
+</p>
+<hr>
+<a href="https://deploy-preview-1--adrianmiasik.netlify.com/"><h2>Seeing How Browsers React. and Not That
+  Type of React.</h2></a>
+<h3>Adrian Miasik</h3>
+<h3>2019-11-03 (9:05 p.m. EST)</h3>
+<p>
+  I noticed something in the previous post. I've tested this file on numerous web browsers and each one reacts
+  slightly differently. Let me show you.
+  <br>
+  <br>
+  First up is <a href="https://www.mozilla.org/firefox/new/">Firefox</a>.
+  <br>
+  This file (`index.html`) works on Firefox. But I noticed that the console did spit out an error:
+  <br>
+<blockquote>The character encoding of the HTML document was not declared.
+  The document will render with garbled text in some browser configurations if the document contains characters from
+  outside the US-ASCII range. The character encoding of the page must be declared in the document or in the transfer
+  protocol.
+</blockquote>
+Alright that should be pretty easy to address. I've used <a href="https://www.codecademy.com/">Codecademy</a> to learn
+web dev before, so I do
+remember that
+each website needs to adhere to a certain HTML
+structure. The first HTML element in any document should be...:<!DOCTYPE html>
+<br>
+<br>
+Hmm, interesting. You didn't see it but adding `!DOCTYPE html` (Replace the ` with <> respectively) doesn't appear
+in my versions of Firefox, Chrome, Internet Explorer 11, and also Microsoft Edge. So even just typing out the correct
+DOCTYPE element in an html file is not enough, it does seems to get deleted by
+the 4 aforementioned browsers. Good to know. Anyways, I digress.
+<br>
+<br>
+Second up is <a href="https://www.google.com/chrome/">Google Chrome</a>.
+<br>
 This file works in Chrome. The console spits out no errors or warnings and accepts this page as is. Great!
-
-Third up is Internet Explorer 11.
-This file works in Internet Explorer 11. The console spits out no errors or warnings and accepts this page as is. Also great!
-
-Last up is Microsoft Edge.
-This file works in Microsoft Edge but we do get certain console logs. Let's go all 4 of them.
-1/4: `HTML1300: Navigation occurred.` This is a simple information log, I'm going to ignore this one for now.
-2/4: `HTML1527: DOCTYPE expected. Consider adding a valid HTML5 doctype: "<!DOCTYPE html>".`  (Funny enough, this warning gets removed just like in my Firefox comment before.)
-3/4: `HTML1502: Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements.` Okay similar error that I will fix in the next post.
-4/4: `HTML1407: Invalid tag name. First character should match [a-zA-Z].` Okay right so it's complaining about `-` being the first character in this file.
-We are replacing the first line with the DOCTYPE so we should first apply that solution and see how Microsoft Edge reacts.
-Alright so let's refresh this file in all our browsers.
-Funny enough, the copy paste of error 3/4 above is now showing 2 HTML1502 logs.
-
+<br>
+<br>
+Third up is <a href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads">Internet Explorer
+  11</a>.
+<br>
+This file works in Internet Explorer 11. The console spits out no errors or warnings and accepts this page as is.
+Also great!
+<br>
+<br>
+Last up is <a href="https://www.microsoft.com/windows/microsoft-edge">Microsoft Edge</a>.
+<br>
+This file works in Microsoft Edge but we do get certain console logs. Let's go all 4 of them:
+<br>
+<br>
+<code>
+  HTML1300: Navigation occurred.
+</code>
+<br>
+This is a simple information log, I'm going to ignore this one for now.
+<br>
+<br>
+<code>
+  HTML1527: DOCTYPE expected. Consider adding a valid HTML5 doctype: "<!DOCTYPE html>".
+</code>
+<br>
+(Funny enough, this warning gets removed just like in my Firefox comment before.)
+<br>
+<br>
+<code>
+  HTML1502: Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements.
+</code>
+<br>
+Okay similar error that I will fix in the next post.
+<br>
+<br>
+<code>
+  HTML1407: Invalid tag name. First character should match [a-zA-Z].
+</code>
+<br>
+Okay right so it's complaining about `-` being the first character in this file.
+We are replacing the first line with the DOCTYPE so we should first apply that solution and see how Microsoft Edge
+reacts.
+Funny enough, the copy paste of error 3/4 above is now showing 2 HTML1502 logs on this page.
+<br>
+<br>
 Alright so what have we noticed?
 Out of my sample size of 4 browsers, all of them were able to view this file just fine.
-In fact all four browsers auto-generated a proper HTML structure while putting all the text you are reading into one paragraph element. Neat-o!
-
-Firefox was able to tell us our file was incorrect and how it could be incorrect in some browsers. Which is really great to see actually!
-Microsoft Edge was expecting a DOCTYPE but didn't tell us why nor how. It did however provide us a solution to fix it though.
-Google Chrome and Internet Explorer 11 had no problems with our files. Now I'm not sure if that concerns me or not. Haha.
-
+In fact all four browsers auto-generated a proper HTML structure while putting all the text you are reading into one
+paragraph element. Neat-o! Firefox was able to tell us our file was incorrect and how it could be incorrect in some
+browsers. Which is really great to see actually! Microsoft Edge was expecting a DOCTYPE but didn't tell us why nor
+how. It did however provide us a solution to fix it though. Google Chrome and Internet Explorer 11 had no problems
+with our files. Now I'm not sure if that concerns me or not. Haha.
+<br>
+<br>
+<strong>TL;DR:</strong>
+<br>
 So, what's the takeaway from all this?
 Welp, this tells us that most browsers are not the same.
 For better or for worse each browser will most likely parse each website slightly differently.
 (I'm not going to get to far into that, but this does become a headache later on)
-
+<br>
 My next steps are clear.
 Let's structure this file using HTML.
 See you in the next update!
-
-P.S. If you managed to get this far before formatting. I congratulate you. This website is very difficult to read without any formatting.
-
---
-[Post #1]
-Title: The Journey Through the Wild West of Web Development Begins.
-Author: Adrian Miasik
-Date: 2019-11-03
-
-Alright Chris. I finally made that website I was talking about.
-
-It's not much, but it's a start :)
-
-In fact I'm not even sure this will properly work on most web browsers. There isn't any proper meta data or html tags here.
-But that's the beauty of this. I get to find out and learn as I go!
-
-So these words you are reading right now are being written inside a program called notepad++.
-Right as I'm done typing this sentence I'm going to save this file as `index.html` and then I'm going to drag and drop this file into my web browser.
-Yup, confirmed that it worked. (Which should be fairly obvious to you since you are reading these words in your web browser right now)
-
-So what is this place?
-
-Well...Hi. I'm Adrian. I'm the dude writing these words you are reading right now. Yup. that's me. (btw I'm glad that's the voice you chose for me)
-Anyways, I've done some web development in my career and spare time but I'm still really new to it.
-In fact I wanted to get back into web dev and also had an itch to create my own website.
-Currently my domain https://www.adrianmiasik.com re-directs to a third-party website with my game content on it.
-But I've been meaning to create a proper place for my domain.
-So I'll be creating a website that I can use for my portfolio work and also a site that I can document this journey on.
-
-I want to create a visual timeline for the history of this site as I create it over time. I'm not sure how far I'll explore that idea but we'll see!
-Check back soon!!!! In the meantime check out my website :^) https://www.adrianmiasik.com
---
-[LICENSE]
-
-Copyright 2019 Adrian Miasik
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+</p>
+<hr>
+<h2>The Journey Through the Wild West of Web Development Begins.</h2>
+<h3>Adrian Miasik</h3>
+<h3>2019-11-03 (5:46 p.m. EST)</h3>
+<p>
+  Alright Chris. I finally made that website I was talking about. It's not much, but it's a start :)
+  <br>
+  <br>
+  In fact I'm not even sure this will properly work on most web browsers. There isn't any proper meta data or html
+  tags here. But that's the beauty of this. I get to find out and learn as I go!
+  <br>
+  So these words you are reading right now are being written inside a program called notepad++.
+  Right as I'm done typing this sentence I'm going to save this file as `index.html` and then I'm going to drag and
+  drop this file into my web browser. Yup, confirmed that it worked. (Which should be fairly obvious to you since you
+  are reading these words in your web
+  browser right now)
+  <br>
+  So what is this place?
+  <br>
+  <br>
+  Well...Hi. I'm Adrian. I'm the dude writing these words you are reading right now. Yup. that's me. (btw I'm glad
+  that's the voice you chose for me)
+  Anyways, I've done some web development in my career and spare time but I'm still really new to it.
+  In fact I wanted to get back into web dev and also had an itch to create my own website.
+  Currently my domain <a href="https://www.adrianmiasik.com">https://www.adrianmiasik.com</a> re-directs to <strike>a
+  third-party website with my game content on it.</strike> the most recent version of this website!
+  I've been meaning to create a proper place for my domain. So I'll be creating a website that I can use for
+  my portfolio work and also a site that I can document this journey on.
+  <br>
+  I want to create a visual timeline for the history of this site as I create it over time. I'm not sure how far I'll
+  explore that idea but we'll see!
+  <br>
+  <br>
+  Check back soon!!!! In the meantime check out my website :^) <a href="https://www.adrianmiasik.com">https://www.adrianmiasik.com</a>
+</p>
+</body>
+</html>
