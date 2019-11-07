@@ -39,7 +39,7 @@ limitations under the License.-->
       </li>
     </ul>
   </div>
-  <br/>
+  <br>
   <body>
     <hr>
     <h2>
@@ -63,11 +63,11 @@ limitations under the License.-->
       another "browser status report" to see how browsers parses this site after <span style="color: gray">&#129460; The Bones Update &#129460;</span>
       and try to solve and obvious browser errors we see. And I also need to address a mistake I've made in my 2nd post.
       (Post #4 and we are already addressing a mistake?) Let's get into it!
-      <br/>
-      <br/>
+      <br>
+      <br>
       First up is Firefox.
 
-      <br/>
+      <br>
       So last time Firefox gave us this error:
     </p>
     <blockquote style="color: red">
@@ -84,16 +84,16 @@ limitations under the License.-->
     <p>
       So what gives? We are getting the same error. You said defining the DOCTYPE by placing <code> &lt;!DOCTYPE html&gt; </code>
       at the top of the html file will resolve this error.
-      <br/>
-      <br/>
+      <br>
+      <br>
       <strong>Nope. I was wrong.</strong>
-      <br/>
-      <br/>
+      <br>
+      <br>
       <span>I realized that defining the document type is not the same as defining the character encoding.</span>
-      <br/>
-      <br/>
+      <br>
+      <br>
       <span>Also I realized I never explained what defining the document type was...So here goes!</span>
-      <br/>
+      <br>
       <code>&lt;!DOCTYPE html&gt;</code> solves the document type warnings and lets the browser know that it will be
       reading this as an HTML document. Defining the document type is often referred to as <i>DTD declaration</i>.
       (Document Type Definition). So why do we have to do this DTD declaration? Well, believe it or not but there are
@@ -101,63 +101,64 @@ limitations under the License.-->
       "doctype sniff" and guess the document type you are using if one is not provided. But since programmers love being
       explicit, just define it. Just remember that there is one declaration that almost everyone uses, <code>&lt;!DOCTYPE
       html&gt;</code> . Everything else is pretty much just a legacy thing.
-      <br/>
-      <br/>
+      <br>
+      <br>
       But how do we define the character encoding? And what is character encoding?
-      <br/>
-      <br/>
+      <br>
+      <br>
       Great questions. I did a bunch of research on this since I was curious about this too. In fact, I'll be sharing my
       findings in another post.
-      <br/>
+      <br>
       But for the scope of this post, I'm not going to go into that rabbit hole right now. If you are interested in
       hearing a brief explanation of character encoding, ASCII, Unicode, and UTF-8.
       <a href="https://github.com/adrian-miasik/adrianmiasik.com/releases"> Make sure to watch my GitHub releases
         page. </a> ;)
-      <br/>
-      <br/>
+      <br>
+      <br>
       Okay sure, I'll ignore what character encoding is for now. How do I solve this character encoding error?
-      <br/>
-      <br/>
+      <br>
+      <br>
       There are actually many solutions to this answer. But...for a lot of modern web pages you are probably going to
       resort to character encoding UTF-8. (especially for western characters)
-      <br/>
-      For now we can solve this error by adding this to our HTML head: <code>&lt;meta charset="UTF-8"&gt;</code>
-      <br/>
-      <br/>
+      <br>
+      For now we can solve this error by adding this to be the first HTML element inside our head: <code>&lt;meta
+      charset="UTF-8"&gt; </code>
+      <br>
+      <br>
       Second up is Google Chrome.
-      <br/>
+      <br>
       Works just fine!
-      <br/>
-      <br/>
+      <br>
+      <br>
       Next up is Internet Explorer 11.
-      <br/>
+      <br>
       Loads fine. However I did realize, the emotes in my previous post title "The Bones Update" are not being displayed
       properly. Instead of bones, there are blue hollow boxes. And the emotes within the post look different and only
       have a black and white color scheme. Interesting observation. Besides that, everything looks fine.
-      <br/>
-      <br/>
+      <br>
+      <br>
       Last up is Microsoft Edge.
-      <br/>
+      <br>
       Microsoft Edge, renders everything just fine. However we do have 6 console messages. (1 info, 5 warnings) Let's go
       through them:
-      <br/>
-      <br/>
+      <br>
+      <br>
       <code> HTML1300: Navigation occurred.</code>
-      <br/>
+      <br>
       This is that same simple information log, I'm going to ignore this again.
-      <br/>
-      <br/>
+      <br>
+      <br>
       <code> HTML1402: Character reference is missing an ending semicolon ";".</code>
-      <br/>
+      <br>
       This is the warning that gets printed 5 times. Apparently I've been creating emoji's in HTML incorrectly. For
       instance I've originally created the eyes emoji by typing in <span style="color: red">& # 1 2 9 4 6 0</span> in
       HTML. (with no spaces) After a quick google search of the error it seems any special character in HTML must end in
       a semicolon.
-      <br/>
-      <br/>
+      <br>
+      <br>
       Alright, that's all 4 browsers I'll be using for this browser report.
-      <br/>
-      <br/>
+      <br>
+      <br>
       <strong>Looks like we now have our action items:</strong>
     </p>
     <ul>
@@ -178,11 +179,11 @@ limitations under the License.-->
       can make font bold. </strong><i>We can italicize this shit too.</i><span style="text-decoration: line-through;">WE CAN CENSOR THINGS...kind of</span>
       I can make things <a href="">clickable.</a> See that list at the top? That shit's also done in HTML too. &#128079;
       W E C A N E V E N U S E E M O J I S &#128079; &#128064; &#128166;
-      <br/>
-      <br/>
+      <br>
+      <br>
       Not sure how I'm going to be hosting different versions of the site just yet. But keep an eye out on the "Site
       Archive" section.
-      <br/>
+      <br>
       Anyways, till next time! Doot &#127930; Doot &#127930;
     </p>
     <hr>
@@ -193,12 +194,12 @@ limitations under the License.-->
     <p>
       I noticed something in the previous post. I've tested this file on numerous web browsers and each one reacts
       slightly differently. Let me show you.
-      <br/>
-      <br/>
+      <br>
+      <br>
       First up is <a href="https://www.mozilla.org/firefox/new/">Firefox</a> .
-      <br/>
+      <br>
       This file (`index.html`) works on Firefox. But I noticed that the console did spit out an error:
-      <br/>
+      <br>
     </p>
     <blockquote>The character encoding of the HTML document was not declared. The document will render with garbled text
       in some browser configurations if the document contains characters from outside the US-ASCII range. The character
@@ -208,67 +209,67 @@ limitations under the License.-->
       Alright that should be pretty easy to address. I've used <a href="https://www.codecademy.com/">Codecademy</a> to
       learn web dev before, so I do remember that each website needs to adhere to a certain HTML structure. The first
       HTML element in any document should be...:<!DOCTYPE html>
-      <br/>
-      <br/>
+      <br>
+      <br>
       Hmm, interesting. You didn't see it but adding `!DOCTYPE html` (Replace the ` with <> respectively) doesn't appear
       in my versions of Firefox, Chrome, Internet Explorer 11, and also Microsoft Edge. So even just typing out the
       correct DOCTYPE element in an HTML file is not enough, it does seems to get deleted by the 4 aforementioned
       browsers. Good to know. Anyways, I digress.
-      <br/>
-      <br/>
+      <br>
+      <br>
       Second up is <a href="https://www.google.com/chrome/">Google Chrome</a> .
-      <br/>
+      <br>
       This file works in Chrome. The console spits out no errors or warnings and accepts this page as is. Great!
-      <br/>
-      <br/>
+      <br>
+      <br>
       Third up is <a href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads">Internet Explorer
       11</a>.
-      <br/>
+      <br>
       This file works in Internet Explorer 11. The console spits out no errors or warnings and accepts this page as is.
       Also great!
-      <br/>
-      <br/>
+      <br>
+      <br>
       Last up is <a href="https://www.microsoft.com/windows/microsoft-edge">Microsoft Edge</a>.
-      <br/>
+      <br>
       This file works in Microsoft Edge but we do get certain console logs. Let's go all 4 of them:
-      <br/>
-      <br/>
+      <br>
+      <br>
       <code> HTML1300: Navigation occurred.</code>
-      <br/>
+      <br>
       This is a simple information log, I'm going to ignore this one for now.
-      <br/>
-      <br/>
+      <br>
+      <br>
       <code> HTML1527: DOCTYPE expected. Consider adding a valid HTML5 doctype: "<!DOCTYPE html>".</code>
-      <br/>
+      <br>
       Funny enough, this warning gets removed just like in my Firefox comment before.
-      <br/>
-      <br/>
+      <br>
+      <br>
       <code> HTML1502: Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements.</code>
-      <br/>
+      <br>
       Okay similar error that I will fix in the next post.
-      <br/>
-      <br/>
+      <br>
+      <br>
       <code> HTML1407: Invalid tag name. First character should match [a-zA-Z].</code>
-      <br/>
+      <br>
       Okay right so it's complaining about `-` being the first character in this file. We are replacing the first line
       with the DOCTYPE so we should first apply that solution and see how Microsoft Edge reacts. Funny enough, the copy
       paste of error 3/4 above is now showing 2 HTML1502 logs on this page.
-      <br/>
-      <br/>
+      <br>
+      <br>
       Alright so what have we noticed? Out of my sample size of 4 browsers, all of them were able to view this file just
       fine. In fact all four browsers auto-generated a proper HTML structure while putting all the text you are reading
       into one paragraph element. Neat-o! Firefox was able to tell us our file was incorrect and how it could be
       incorrect in some browsers. Which is really great to see actually! Microsoft Edge was expecting a DOCTYPE but
       didn't tell us why nor how. It did however provide us a solution to fix it though. Google Chrome and Internet
       Explorer 11 had no problems with our files. Now I'm not sure if that concerns me or not. Haha.
-      <br/>
-      <br/>
+      <br>
+      <br>
       <strong>TL;DR:</strong>
-      <br/>
+      <br>
       So, what's the takeaway from all this? Welp, this tells us that most browsers are not the same. For better or for
       worse each browser will most likely parse each website slightly differently. (I'm not going to get to far into
       that, but this does become a headache later on)
-      <br/>
+      <br>
       My next steps are clear. Let's structure this file using HTML. See you in the next update!
     </p>
     <hr>
@@ -280,19 +281,19 @@ limitations under the License.-->
     <h3>2019-11-03 (5:46 p.m. EST)</h3>
     <p>
       Alright Chris. I finally made that website I was talking about. It's not much, but it's a start :)
-      <br/>
-      <br/>
+      <br>
+      <br>
       In fact I'm not even sure this will properly work on most web browsers. There isn't any proper meta data or html
       tags here. But that's the beauty of this. I get to find out and learn as I go!
-      <br/>
+      <br>
       So these words you are reading right now are being written inside a program called notepad++. Right as I'm done
       typing this sentence I'm going to save this file as `index.html` and then I'm going to drag and drop this file
       into my web browser. Yup, confirmed that it worked. (Which should be fairly obvious to you since you are reading
       these words in your web browser right now)
-      <br/>
+      <br>
       So what is this place?
-      <br/>
-      <br/>
+      <br>
+      <br>
       Well...Hi. I'm Adrian. I'm the dude writing these words you are reading right now. Yup. that's me. (btw I'm glad
       that's the voice you chose for me) Anyways, I've done some web development in my career and spare time but I'm
       still really new to it. In fact I wanted to get back into web dev and also had an itch to create my own website.
@@ -301,11 +302,11 @@ limitations under the License.-->
             third-party website with my game content on it.</span> the most recent version of this website! I've been
       meaning to create a proper place for my domain. So I'll be creating a website that I can use for my portfolio work
       and also a site that I can document this journey on.
-      <br/>
+      <br>
       I want to create a visual timeline for the history of this site as I create it over time. I'm not sure how far
       I'll explore that idea but we'll see!
-      <br/>
-      <br/>
+      <br>
+      <br>
       Check back soon!!!! In the meantime check out my website :^) <a href="https://www.adrianmiasik.com">https://www.adrianmiasik.com</a>
     </p>
   </body>
