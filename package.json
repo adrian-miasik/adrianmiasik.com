@@ -1,0 +1,20 @@
+{
+  "name": "adrianmiasik.com",
+  "version": "1.0.0",
+  "description": "Adrian Miasik's Website",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian-miasik/adrianmiasik.com.git"
+  },
+  "keywords": [],
+  "author": "Adrian Miasik",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/adrian-miasik/adrianmiasik.com/issues"
+  },
+  "homepage": "https://github.com/adrian-miasik/adrianmiasik.com#readme"
+}
