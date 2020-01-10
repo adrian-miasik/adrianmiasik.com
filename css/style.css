@@ -1,3 +1,15 @@
+/* TODO: Heebo-Medium - Add font support for most web browsers */
+@font-face {
+  font-family: "Heebo-Medium";
+  src: url("../fonts/Heebo-Medium.ttf"); format("truetype");
+}
+
+/* TODO: Heebo-Light - Add font support for most web browsers */
+@font-face {
+  font-family: "Heebo-Light";
+  src: url("../fonts/Heebo-Light.ttf"); format("truetype");
+}
+
 :root {
   width: 90%;
   margin: auto;
@@ -13,11 +25,10 @@ img {
 
 h2 {
   font-size: 36px;
-  font-family: "Heebo", sans-serif;
-  font-weight: bold;
+  font-family: "Heebo-Medium", sans-serif;
   margin-bottom: 4px;
 }
 
 p {
-  font-family: "Heebo", sans-serif;
+  font-family: "Heebo-Light", sans-serif;
 }
