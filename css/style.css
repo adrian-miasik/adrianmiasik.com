@@ -1,34 +1,56 @@
-/* TODO: Heebo-Medium - Add font support for most web browsers */
-@font-face {
-  font-family: "Heebo-Medium";
-  src: url("../fonts/Heebo-Medium.ttf"); format("truetype");
-}
-
 /* TODO: Heebo-Light - Add font support for most web browsers */
 @font-face {
-  font-family: "Heebo-Light";
-  src: url("../fonts/Heebo-Light.ttf"); format("truetype");
+    font-family: "Heebo-Light";
+    src: url("../fonts/Heebo-Light.ttf"); format("truetype");
+}
+
+/* TODO: Heebo-Regular - Add font support for most web browsers */
+@font-face {
+    font-family: "Heebo-Regular";
+    src: url("../fonts/Heebo-Regular.ttf"); format("truetype");
+}
+
+/* TODO: Heebo-Medium - Add font support for most web browsers */
+@font-face {
+    font-family: "Heebo-Medium";
+    src: url("../fonts/Heebo-Medium.ttf"); format("truetype");
+}
+
+/* TODO: Heebo-Bold - Add font support for most web browsers */
+@font-face {
+    font-family: "Heebo-Bold";
+    src: url("../fonts/Heebo-Bold.ttf"); format("truetype");
 }
 
 :root {
-  width: 90%;
-  margin: auto;
+    width: 95%;
+    margin: auto;
 }
 
-img {
-  width: 100px;
-  height: 100px;
-  padding: 1px;
-  border: 3px solid black;
-  border-radius: 100%;
+p{
+    font-family: Heebo-Regular, sans-serif;
 }
 
 h2 {
-  font-size: 36px;
-  font-family: "Heebo-Medium", sans-serif;
-  margin-bottom: 4px;
+    font-size: 36px;
+    font-family: "Heebo-Bold", sans-serif;
+    margin-bottom: 4px;
 }
 
-p {
-  font-family: "Heebo-Light", sans-serif;
+h4 {
+    font-size: 24px;
+    font-family: "Heebo-Medium", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F22222;
+}
+
+.slogan {
+    font-family: "Heebo-Light", sans-serif;
+    margin: 0;
 }
