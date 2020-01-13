@@ -1,0 +1,146 @@
+p {
+    font-family: "Heebo-Regular", sans-serif;
+    margin: 5px 0;
+    width: fit-content;
+    font-size: 14px;
+}
+
+.slogan{
+    font-size: 20px;
+}
+
+.highlight {
+    display: inline-flex;
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    margin-top: 12px;
+}
+
+.highlight > img{
+    height: 15px;
+    padding-right: 5px;
+    align-self: center;
+    user-select: none;
+}
+
+.highlight > h4{
+    align-self: center;
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.social{
+    display: inline-flex;
+    margin: 2px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.social-label{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 0 2px;
+}
+
+.social-label > p{
+    font-size: 12px;
+}
+
+.social-label > .square {
+    border-radius: 2px;
+    width: 15px;
+}
+
+.social-label > .circle {
+    width: 15px;
+    border-radius: 50%;
+}
+
+.squircle {
+    border-radius: 3px;
+}
+
+.social-icon{
+    height: 15px;
+    width: 15px;
+    overflow: hidden;
+    margin-right: 2px;
+}
+
+.social > p{
+    padding: 5px;
+    justify-self: left;
+    flex-grow: 1;
+    margin: 0 10px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.listing {
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    /*border: 1px dashed rgba(242, 34, 34, 1);*/
+    border: 1px dashed rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.group-content {
+    padding-left: 6px;
+    margin-bottom: -2px;
+}
+
+.group-meta{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.group-meta > img {
+    height: 25px;
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+.group-meta > p {
+    align-self: flex-end;
+    display: block;
+    text-align: right;
+    font-family: "Heebo-Regular", sans-serif;
+    color: black;
+    font-size: 0.6em;
+}
+
+.server > p{
+    font-size: 10px;
+    margin: 3px 0;
+    color: rgba(0,0,0,0.3);
+}
+
+#linkedin{
+    background-color: #087dd9;
+}
+
+#george-brown{
+    height: 35px;
+}
+
+#stitch-history{
+    margin-top: -2px;
+    margin-right: 2px;
+}
