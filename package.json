@@ -19,5 +19,9 @@
   "homepage": "https://github.com/adrian-miasik/adrianmiasik.com#readme",
   "devDependencies": {
     "prettier": "1.19.1"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "htmlWhitespaceSensitivity": "ignore"
   }
 }
