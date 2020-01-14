@@ -93,7 +93,6 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
-    /*border: 1px dashed rgba(242, 34, 34, 1);*/
     border: 1px dashed rgba(0,0,0,0.2);
     border-radius: 3px;
     padding: 3px;
