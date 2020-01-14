@@ -45,13 +45,18 @@ h4 {
 
 a {
     text-decoration: none;
+    line-height: 20px;
 }
 
 a:visited {
     color: #F22222;
 }
 
-.slogan {
+h3 {
     font-family: "Heebo-Light", sans-serif;
     margin: 0;
+}
+
+li{
+    font-family: Heebo-Regular, sans-serif;
 }
