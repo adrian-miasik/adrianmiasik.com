@@ -30,5 +30,108 @@ limitations under the License.-->
       <li><a href="about.html">About</a></li>
     </ul>
     <br />
+    <!-- Seeing How Browsers React. and Not That Type of React -->
+    <div>
+      <a href="https://deploy-preview-1--adrianmiasik.netlify.com/">
+        <h2>Seeing How Browsers React. and Not That Type of React</h2>
+      </a>
+      <h3>Adrian Miasik</h3>
+      <h3>2019-11-03 (9:05 p.m. EST)</h3>
+      <p>
+        I noticed something in the previous post. I've tested this file on numerous web browsers and each one reacts
+        slightly differently. Let me show you.
+        <br />
+        <br />
+        First up is
+        <a href="https://www.mozilla.org/firefox/new/">Firefox</a>
+        .
+        <br />
+        This file (`index.html`) works on Firefox. But I noticed that the console did spit out an error:
+        <br />
+      </p>
+      <blockquote>
+        The character encoding of the HTML document was not declared. The document will render with garbled text in some
+        browser configurations if the document contains characters from outside the US-ASCII range. The character
+        encoding of the page must be declared in the document or in the transfer protocol.
+      </blockquote>
+      <p>
+        Alright that should be pretty easy to address. I've used
+        <a href="https://www.codecademy.com/">Codecademy</a>
+        to learn web dev before, so I do remember that each website needs to adhere to a certain HTML structure. The
+        first HTML element in any document should be...:
+        <!DOCTYPE html>
+        <br />
+        <br />
+        Hmm, interesting. You didn't see it but adding `!DOCTYPE html` (Replace the ` with <> respectively) doesn't
+        appear in my versions of Firefox, Chrome, Internet Explorer 11, and also Microsoft Edge. So even just typing out
+        the correct DOCTYPE element in an HTML file is not enough, it does seems to get deleted by the 4 aforementioned
+        browsers. Good to know. Anyways, I digress.
+        <br />
+        <br />
+        Second up is
+        <a href="https://www.google.com/chrome/">Google Chrome</a>
+        .
+        <br />
+        This file works in Chrome. The console spits out no errors or warnings and accepts this page as is. Great!
+        <br />
+        <br />
+        Third up is
+        <a href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads">Internet Explorer 11</a>
+        .
+        <br />
+        This file works in Internet Explorer 11. The console spits out no errors or warnings and accepts this page as
+        is. Also great!
+        <br />
+        <br />
+        Last up is
+        <a href="https://www.microsoft.com/windows/microsoft-edge">Microsoft Edge</a>
+        .
+        <br />
+        This file works in Microsoft Edge but we do get certain console logs. Let's go all 4 of them:
+        <br />
+        <br />
+        <code>HTML1300: Navigation occurred.</code>
+        <br />
+        This is a simple information log, I'm going to ignore this one for now.
+        <br />
+        <br />
+        <code>
+          HTML1527: DOCTYPE expected. Consider adding a valid HTML5 doctype: "
+          <!DOCTYPE html>
+          ".
+        </code>
+        <br />
+        Funny enough, this warning gets removed just like in my Firefox comment before.
+        <br />
+        <br />
+        <code>HTML1502: Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements.</code>
+        <br />
+        Okay similar error that I will fix in the next post.
+        <br />
+        <br />
+        <code>HTML1407: Invalid tag name. First character should match [a-zA-Z].</code>
+        <br />
+        Okay right so it's complaining about `-` being the first character in this file. We are replacing the first line
+        with the DOCTYPE so we should first apply that solution and see how Microsoft Edge reacts. Funny enough, the
+        copy paste of error 3/4 above is now showing 2 HTML1502 logs on this page.
+        <br />
+        <br />
+        Alright so what have we noticed? Out of my sample size of 4 browsers, all of them were able to view this file
+        just fine. In fact all four browsers auto-generated a proper HTML structure while putting all the text you are
+        reading into one paragraph element. Neat-o! Firefox was able to tell us our file was incorrect and how it could
+        be incorrect in some browsers. Which is really great to see actually! Microsoft Edge was expecting a DOCTYPE but
+        didn't tell us why nor how. It did however provide us a solution to fix it though. Google Chrome and Internet
+        Explorer 11 had no problems with our files. Now I'm not sure if that concerns me or not. Haha.
+        <br />
+        <br />
+        <strong>TL;DR:</strong>
+        <br />
+        So, what's the takeaway from all this? Welp, this tells us that most browsers are not the same. For better or
+        for worse each browser will most likely parse each website slightly differently. (I'm not going to get to far
+        into that, but this does become a headache later on)
+        <br />
+        My next steps are clear. Let's structure this file using HTML. See you in the next update!
+      </p>
+    </div>
   </body>
 </html>
