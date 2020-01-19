@@ -28,7 +28,7 @@
     font-size: 62.5%;
 }
 
-p, span, a, strong{
+p, span, a{
     font-family: Heebo-Regular, sans-serif;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -36,20 +36,19 @@ p, span, a, strong{
 
 strong{
     font-family: Heebo-Bold, sans-serif;
+    font-size: 1.4rem;
 }
 
 blockquote, code{
     font-family: "JetBrains Mono", monospace;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     line-height: 1.6rem;
 }
 
 code{
-    font-family: "JetBrains Mono", monospace;
-    font-size: 1.2rem;
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 2px;
-    padding: 0 3px;
+    padding: 1px 3px;
 }
 
 code:hover{

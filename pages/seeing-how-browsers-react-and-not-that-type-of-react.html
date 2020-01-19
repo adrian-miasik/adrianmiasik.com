@@ -111,65 +111,51 @@ limitations under the License.-->
           <br />
           <p>Let's go through them all individually:</p>
           <br />
-          <span>
-            <code>HTML1300: Navigation occurred.</code>
-            <br />
+          <code>HTML1300: Navigation occurred.</code>
+          <p>
             This is a simple information log, I'm going to ignore this one.
-          </span>
-          <br />
+          </p>
           <br />
 
-          <span>
-            <code>
-              HTML1527: DOCTYPE expected. Consider adding a valid HTML5 doctype: "&lt;!DOCTYPE html&gt;".
-            </code>
-            <br />
+          <code>
+            HTML1527: DOCTYPE expected. Consider adding a valid HTML5 doctype: "&lt;!DOCTYPE html&gt;".
+          </code>
+          <p>
             This warning gets removed after we add
             <code>&lt;!DOCTYPE html&gt;</code>
             to the top of our HTML page .
-          </span>
-          <br />
+          </p>
           <br />
 
-          <span>
-            <code>
-              HTML1502: Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements.
-            </code>
-            <br />
+          <code>
+            HTML1502: Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements.
+          </code>
+          <p>
             This warning gets removed after we add
             <code>&lt;!DOCTYPE html&gt;</code>
             to the top of our HTML page .
-          </span>
-          <br />
+          </p>
           <br />
 
-          <span>
-            <code>
-              HTML1407: Invalid tag name. First character should match [a-zA-Z].
-            </code>
-            <br />
+          <code>HTML1407: Invalid tag name. First character should match [a-zA-Z].</code>
+          <p>
             This is complaining about
             <code>-</code>
             being the first character in this file. We are replacing the first line with the
             <code>&lt;!DOCTYPE html&gt;</code>
             so we should first apply that solution and see how Microsoft Edge reacts.
-          </span>
-          <br />
-          <br />
-
-          <p>
-            Alright so what have we noticed? Out of my sample size of 4 browsers, all of them were able to view this
-            file just fine. In fact all four browsers auto-generated a proper HTML structure while putting all the text
-            you are reading into one paragraph element. Neat-o! Firefox was able to tell us our file was incorrect and
-            how it could be incorrect in some browsers. Which is really great to see actually! Microsoft Edge was
-            expecting a DOCTYPE but didn't tell us why nor how. It did however provide us a solution to fix it though.
-            Google Chrome and Internet Explorer 11 had no problems with our files. Now I'm not sure if that concerns me
-            or not. Haha.
           </p>
-          <br />
         </section>
         <br />
-
+        <p>
+          Alright so what have we noticed? Out of my sample size of 4 browsers, all of them were able to view this file
+          just fine. In fact all four browsers auto-generated a proper HTML structure while putting all the text you are
+          reading into one paragraph element. Neat-o! Firefox was able to tell us our file was incorrect and how it
+          could be incorrect in some browsers. Which is really great to see actually! Microsoft Edge was expecting a
+          DOCTYPE but didn't tell us why nor how. It did however provide us a solution to fix it though. Google Chrome
+          and Internet Explorer 11 had no problems with our files. Now I'm not sure if that concerns me or not. Haha.
+        </p>
+        <br />
         <strong>TL;DR:</strong>
         <br />
         <p>
