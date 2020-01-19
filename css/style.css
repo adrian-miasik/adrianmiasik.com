@@ -28,11 +28,34 @@
     font-size: 62.5%;
 }
 
-p{
+p, span, a, strong{
     font-family: Heebo-Regular, sans-serif;
-    font-size: 1.6em;
-    line-height: 1.45;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
+
+strong{
+    font-family: Heebo-Bold, sans-serif;
+}
+
+blockquote, code{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+code{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.2rem;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+    padding: 0 3px;
+}
+
+code:hover{
+    border: 1px solid rgba(0, 0, 0, 0.75);
+}
+
 
 h2 {
     font-family: "Heebo-Bold", sans-serif;
@@ -52,7 +75,7 @@ a {
 }
 
 a:visited {
-    color: #F22222;
+    /*color: #F22222;*/
 }
 
 h3 {

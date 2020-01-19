@@ -1,6 +1,23 @@
+h2{
+    color: #F22222;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+blockquote{
+    color: #373737;
+    border-left: 1px solid #373737;
+    padding-left: 10px;
+    margin: 5px 0 10px 5px;
+}
+
 .content{
     width: 85%;
-    margin: 20px auto;
+    margin: 20px;
+    max-width: 800px;
 }
 
 .content-meta > h2{
@@ -11,7 +28,3 @@
     margin-top: 20px;
 }
 
-h3{
-    font-size: 1.5em;
-    margin: 5px 0;
-}
