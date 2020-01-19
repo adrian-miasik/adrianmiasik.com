@@ -22,6 +22,6 @@
   },
   "prettier": {
     "printWidth": 120,
-    "htmlWhitespaceSensitivity": "strict"
+    "htmlWhitespaceSensitivity": "ignore"
   }
 }
