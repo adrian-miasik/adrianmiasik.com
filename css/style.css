@@ -28,10 +28,14 @@
     font-size: 62.5%;
 }
 
-p, span, a{
+p, span, a, li{
     font-family: Heebo-Regular, sans-serif;
     font-size: 1.4rem;
     line-height: 1.8rem;
+}
+
+em{
+    font-style: italic;
 }
 
 strong{
@@ -64,7 +68,7 @@ h2 {
 }
 
 h4 {
-    font-size: 2.4em;
+    font-size: 1.8em;
     font-family: "Heebo-Medium", sans-serif;
 }
 
@@ -81,9 +85,4 @@ h3 {
     font-family: "Heebo-Light", sans-serif;
     font-size: 1.6em;
     margin: 0;
-}
-
-li{
-    font-family: Heebo-Regular, sans-serif;
-    font-size: 1.6em;
 }
