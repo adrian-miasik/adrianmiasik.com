@@ -63,11 +63,11 @@ limitations under the License.-->
             character encoding of the page must be declared in the document or in the transfer protocol.
           </blockquote>
           <p>
-            Alright that should be pretty easy to address. I've used
-            <a href="https://www.codecademy.com/">Codecademy</a>
-            to learn web dev before, so I do remember that each website needs to adhere to a certain HTML structure. The
-            first HTML element in any document should be
+            Alright that should be pretty easy to address. When I was learning web dev before, I remember that each HTML
+            page has to adhere to a certain HTML structure. I also remember that our first HTML element in any document
+            should be
             <code>&lt;!DOCTYPE html&gt;</code>
+            . Hopefully that addresses our character encoding error.
           </p>
         </section>
         <br />
@@ -111,34 +111,40 @@ limitations under the License.-->
           <br />
           <code>HTML1300: Navigation occurred.</code>
           <p>
-            This is a simple information log, I'm going to ignore this one.
+            This is just an information log. Microsoft Edge is telling us that
+            <a
+              href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console/error-and-status-codes#html-codes"
+              target="_blank"
+            >
+              the browser navigated to a new page or the current page has been refreshed.
+            </a>
           </p>
           <br />
-          <code>
-            HTML1527: DOCTYPE expected. Consider adding a valid HTML5 doctype: "&lt;!DOCTYPE html&gt;".
-          </code>
+          <code>HTML1527: DOCTYPE expected. Consider adding a valid HTML5 doctype: "&lt;!DOCTYPE html&gt;".</code>
           <p>
-            This warning gets removed after we add
+            This warning is telling us that the browser is expecting a
+            <em>DOCTYPE</em>
+            . Just like the Firefox section, we can address this by placing
             <code>&lt;!DOCTYPE html&gt;</code>
-            to the top of our HTML page .
+            at the top of our HTML page.
           </p>
           <br />
-          <code>
-            HTML1502: Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements.
-          </code>
+          <code>HTML1502: Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements.</code>
           <p>
-            This warning gets removed after we add
+            This warning is telling us that the browser came across a
+            <em>unexpected DOCTYPE</em>
+            and only one may exists before any elements. Hopefully placing
             <code>&lt;!DOCTYPE html&gt;</code>
-            to the top of our HTML page .
+            at the top of our file fixes this as well.
           </p>
           <br />
           <code>HTML1407: Invalid tag name. First character should match [a-zA-Z].</code>
           <p>
             This is complaining about
             <code>-</code>
-            being the first character in this file. We are replacing the first line with the
+            being the first character in this file. But since we are replacing the first line with the
             <code>&lt;!DOCTYPE html&gt;</code>
-            so we should first apply that solution and see how Microsoft Edge reacts.
+            , this should no longer be an issue. Let's apply these solutions and check back later.
           </p>
         </section>
         <br />
@@ -148,15 +154,18 @@ limitations under the License.-->
           reading into one paragraph element. Neat-o! Firefox was able to tell us our file was incorrect and how it
           could be incorrect in some browsers. Which is really great to see actually! Microsoft Edge was expecting a
           DOCTYPE but didn't tell us why nor how. It did however provide us a solution to fix it though. Google Chrome
-          and Internet Explorer 11 had no problems with our files. Now I'm not sure if that concerns me or not. Haha.
+          and Internet Explorer 11 had no problems with our files. Cool.
         </p>
         <br />
         <strong>TL;DR:</strong>
         <br />
         <p>
           So, what's the takeaway from all this? Welp, this tells us that most browsers are not the same. For better or
-          for worse each browser will most likely parse each website slightly differently. (I'm not going to get to far
-          into that, but this does become a headache later on)
+          for worse,
+          <em>each browser</em>
+          will most likely parse
+          <em>each website</em>
+          slightly differently. (I'm not going to get to far into that, but this does become a headache later on)
           <br />
           <br />
           My next steps are clear. Let's structure this file using HTML. See you soon!
