@@ -145,16 +145,16 @@ h3 {
 
 
 .social {
-    display: inline-flex;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 .social-label {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 13px;
 }
 
 .social-label > p {
@@ -177,9 +177,8 @@ h3 {
 
 .social-icon {
     height: 15px;
-    width: 15px;
     overflow: hidden;
-    margin-right: 2px;
+    margin-right: 3px;
 }
 
 #linkedin {
