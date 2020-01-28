@@ -23,9 +23,9 @@
 }
 
 :root {
-    width: 95%;
     margin: auto;
     font-size: 62.5%;
+    background: #F8F8F8;
 }
 
 p, span, a, li{
@@ -85,4 +85,103 @@ h3 {
     font-family: "Heebo-Light", sans-serif;
     font-size: 1.6em;
     margin: 0;
+}
+
+.content {
+    margin: 60px auto;
+    border: 1px solid white;
+    background: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+    padding: 15px;
+    max-width: 800px;
+}
+
+.blinking {
+    animation: blinking 1s step-start 0s infinite;
+    opacity: 1;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.profile {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.profile-photo {
+    height: 60px;
+    width: 60px;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #070707;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.profile-details {
+    margin-left: 8px;
+}
+
+.profile-details > h2 {
+
+}
+
+.profile-details > h3 {
+    font-size: 2.0em;
+}
+
+
+.social {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.social-label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.social-label > p {
+    font-size: 1.2rem;
+    padding-top: 2px;
+}
+
+.social-label > .square {
+    width: 15px;
+}
+
+.social-label > .circle {
+    width: 15px;
+    border-radius: 50%;
+}
+
+.squircle {
+    border-radius: 3px;
+}
+
+.social-icon {
+    height: 15px;
+    width: 15px;
+    overflow: hidden;
+    margin-right: 2px;
+}
+
+#linkedin {
+    background-color: #087dd9;
 }
