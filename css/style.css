@@ -26,6 +26,8 @@
     margin: auto;
     font-size: 62.5%;
     background: #F8F8F8;
+    padding: 15px;
+    max-width: 800px;
 }
 
 p, span, a, li{
@@ -77,10 +79,6 @@ a {
     line-height: 20px;
 }
 
-a:visited {
-    /*color: #F22222;*/
-}
-
 h3 {
     font-family: "Heebo-Light", sans-serif;
     font-size: 1.6em;
@@ -88,12 +86,11 @@ h3 {
 }
 
 .content {
-    margin: 60px auto;
+    margin: auto;
     border: 1px solid white;
     background: white;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
     padding: 15px;
-    max-width: 800px;
 }
 
 .blinking {
@@ -114,10 +111,11 @@ h3 {
 }
 
 .profile {
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 40px auto;
+    max-width: 800px;
 }
 
 
@@ -125,30 +123,22 @@ h3 {
     height: 60px;
     width: 60px;
     padding: 8px;
-    background-color: white;
-    border: 1px solid #070707;
-    box-sizing: border-box;
-    border-radius: 3px;
+    border: 5px solid #070707;
 }
 
 .profile-details {
     margin-left: 8px;
 }
 
-.profile-details > h2 {
-
-}
-
 .profile-details > h3 {
     font-size: 2.0em;
 }
-
 
 .social {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .social-label {
