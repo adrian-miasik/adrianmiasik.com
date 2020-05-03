@@ -23,23 +23,54 @@
 }
 
 :root {
-    width: 95%;
     margin: auto;
+    font-size: 62.5%;
+    background: #F8F8F8;
+    padding: 15px;
+    max-width: 800px;
 }
 
-p{
+p, span, a, li{
     font-family: Heebo-Regular, sans-serif;
-    line-height: 1.45;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
+
+em{
+    font-style: italic;
+}
+
+strong{
+    font-family: Heebo-Bold, sans-serif;
+    font-size: 1.4rem;
+}
+
+blockquote, code{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+}
+
+code{
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+    padding: 1px 3px;
+}
+
+code:hover{
+    border: 1px solid rgba(0, 0, 0, 0.75);
+}
+
 
 h2 {
-    font-size: 36px;
     font-family: "Heebo-Bold", sans-serif;
+    font-size: 3.6em;
     margin-bottom: 4px;
+    line-height: 1;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 1.8em;
     font-family: "Heebo-Medium", sans-serif;
 }
 
@@ -48,15 +79,98 @@ a {
     line-height: 20px;
 }
 
-a:visited {
-    color: #F22222;
-}
-
 h3 {
     font-family: "Heebo-Light", sans-serif;
+    font-size: 1.6em;
     margin: 0;
 }
 
-li{
-    font-family: Heebo-Regular, sans-serif;
+.content {
+    margin: auto;
+    border: 1px solid white;
+    background: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+    padding: 15px;
+}
+
+.blinking {
+    animation: blinking 1s step-start 0s infinite;
+    opacity: 1;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+
+.profile-photo {
+    height: 60px;
+    width: 60px;
+    padding: 8px;
+    border: 5px solid #070707;
+}
+
+.profile-details {
+    margin-left: 8px;
+}
+
+.profile-details > h3 {
+    font-size: 2.0em;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.social-label {
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+}
+
+.social-label > p {
+    font-size: 1.2rem;
+    padding-top: 2px;
+}
+
+.social-label > .square {
+    width: 15px;
+}
+
+.social-label > .circle {
+    width: 15px;
+    border-radius: 50%;
+}
+
+.squircle {
+    border-radius: 3px;
+}
+
+.social-icon {
+    height: 15px;
+    overflow: hidden;
+    margin-right: 3px;
+}
+
+#linkedin {
+    background-color: #087dd9;
 }

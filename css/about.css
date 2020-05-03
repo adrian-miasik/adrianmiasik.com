@@ -1,10 +1,10 @@
-p {
-    font-family: "Heebo-Regular", sans-serif;
-    font-size: 14px;
+h4 {
+    font-size: 2.2em;
+    font-family: "Heebo-Medium", sans-serif;
 }
 
-h3{
-    font-size: 20px;
+strong{
+    font-size: 1rem;
 }
 
 .highlight {
@@ -27,62 +27,6 @@ h3{
     align-self: center;
 }
 
-.profile {
-    width: 80px;
-    height: 80px;
-    border: 3px solid black;
-    border-radius: 50%;
-    box-sizing: border-box;
-}
-
-.social{
-    display: inline-flex;
-    justify-content: flex-start;
-    margin-top: 4px;
-    flex-wrap: wrap;
-}
-
-.social-label{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    padding: 0 3px;
-}
-
-.social-label > p{
-    font-size: 12px;
-    padding-top: 2px;
-}
-
-.social-label > .square {
-    width: 15px;
-}
-
-.social-label > .circle {
-    width: 15px;
-    border-radius: 50%;
-}
-
-.squircle {
-    border-radius: 3px;
-}
-
-.social-icon{
-    height: 15px;
-    width: 15px;
-    overflow: hidden;
-    margin-right: 2px;
-}
-
-.social > p{
-    padding: 5px;
-    justify-self: left;
-    flex-grow: 1;
-    margin: 0 10px 0 0;
-    display: flex;
-    flex-direction: row;
-}
-
 .top-listing {
     margin-top: 5px;
 }
@@ -94,12 +38,16 @@ h3{
 .group {
     display: flex;
     justify-content: space-between;
-    border: 1px dashed rgba(0,0,0,0.2);
+    border: 1px dashed rgba(0,0,0,0.175);
     border-radius: 3px;
     padding: 3px;
-    max-width: 700px;
+    /*max-width: 700px;*/
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.group:hover{
+    border: 1px dashed rgba(0, 0, 0, 0.5);
 }
 
 .group-content {
@@ -115,10 +63,6 @@ h3{
     flex-shrink: 0;
  }
 
-.group-resize-small{
-    justify-content: space-between;
-}
-
 .group-meta > img {
     height: 27px;
     align-self: flex-end;
@@ -130,9 +74,13 @@ h3{
     text-align: right;
     font-family: "Heebo-Regular", sans-serif;
     color: black;
-    font-size: 0.6em;
+    font-size: 0.9rem;
     line-height: 1;
     margin-top: 5px;
+}
+
+.group-resize-small {
+    justify-content: space-between;
 }
 
 .server > p{
@@ -141,16 +89,8 @@ h3{
     color: rgba(0,0,0,0.3);
 }
 
-#linkedin{
-    background-color: #087dd9;
-}
-
 #george-brown{
     height: 40px;
-}
-
-#stitch-media{
-
 }
 
 #stitch-history{
