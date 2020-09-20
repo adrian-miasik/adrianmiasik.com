@@ -132,7 +132,10 @@ h3 {
 }
 
 .profile-details {
-    margin-left: 8px;
+    margin: auto 0 auto 8px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
 }
 
 .profile-details > h3 {
@@ -141,9 +144,8 @@ h3 {
 
 .social {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     margin-top: 4px;
+    flex-wrap: wrap;
 }
 
 .social-label {
